@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- voir https://greensock.com/docs/v3/Installation#installer -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="svgelement.js"></script> 
+
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    svg {
+      border: 1px solid #ccc;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>TD1 - Exercice SVG</h2>
+
+  
+    <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="960"
+    height="540"
+    viewBox="0 0 16 9"
+    id="dessin">
+  </svg>
+
+
+  <script>
+     const svg = SVGelement.fromSelector("#dessin")
+
+    svg.appendElement("rect", {
+        x: 0,
+        y: 0,
+        width: 16,
+        height: 9,
+        fill: "lightgrey"
+    })
+  </script>
+
+</body>
+</html>     
